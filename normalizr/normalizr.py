@@ -39,7 +39,8 @@ class Normalizr:
         Params:
             language (string): Language code.
         """
-        print('loading')
+        # uncommenting this will display a 'loading' display to indicate stop words loading
+        # print('loading') 
         with codecs.open(os.path.join(path, 'data/stop-' + language), 'r', 'UTF-8') as file:
             for line in file:
                 fields = line.split('|')
